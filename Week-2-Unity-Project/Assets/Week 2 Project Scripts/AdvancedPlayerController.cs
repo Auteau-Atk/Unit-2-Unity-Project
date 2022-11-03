@@ -76,7 +76,7 @@ public class AdvancedPlayerController : MonoBehaviour
         // Code for gravity
         if (controller.isGrounded && velocity.y < 0)
         {
-            velocity.y = 0f;
+            velocity.y = -1f;
         }
 
         velocity.y += gravity * Time.deltaTime;
